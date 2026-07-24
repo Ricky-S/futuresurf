@@ -2,7 +2,7 @@
 
 A benchmark for **future-time surface reconstruction**: given frames up to time *T*, how good is a method's reconstructed **mesh** at held-out *t > T*?
 
-- 📄 **Paper:** `TODO`
+- 📄 **Paper:** [arXiv](https://arxiv.org/abs/2607.21471)
 - 🤗 **Data:** [rickyshi/futuresurf](https://huggingface.co/datasets/rickyshi/futuresurf)
 
 ## Videos
@@ -62,6 +62,17 @@ Writes `results/gap_wave.json` with `future_mean_cd` (**primary score**), `obser
 python eval/gt_oracle.py \
     --data dataset/controlled \
     --out gtside_constructed.json
+```
+
+## Citation
+If you use FutureSurf, please cite:
+```bibtex
+@article{shi2026futuresurf,
+  title   = {Future Rendering $\neq$ Future Surface: A Benchmark and Dataset for Dynamic Surface Reconstruction Beyond the Observed Window},
+  author  = {Shi, Yukun and Gong, Minglun},
+  journal = {arXiv preprint arXiv:2607.21471},
+  year    = {2026}
+}
 ```
 
 ## License
